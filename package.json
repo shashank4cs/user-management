@@ -1,0 +1,37 @@
+{
+  "name": "user-management",
+  "version": "0.0.1",
+  "description": "User can add/edit/delete the records.",
+  "main": "js/app.js",
+  "dependencies": {
+    "flux": "^2.0.0",    
+	"react": "^0.14.7",
+    "react-bootstrap": "^0.28.4",
+    "react-dom": "^0.14.7",
+    "react-router": "^0.13.3"
+  },
+  "devDependencies": {
+	"babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browserify": "~6.2.0",
+    "envify": "~3.0.0",
+    "react": "^0.12.0",
+    "reactify": "^0.15",
+    "watchify": "~2.1.0",
+	"require-dir": "^0.3.0"
+  },
+  "scripts": {
+    "start": "forever start bin/www",
+    "restart": "forever restartall",
+    "stop": "forever stopall"
+  },
+  "author": "Chetan SInghal, Kapil Hinduja, Shashank Shringi",
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
